@@ -15,18 +15,68 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: top;
+  font-size: calc(20px + 2vmin);
   color: white;
+  padding: 2rem;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+.title {
+  color: #282c34;
+  font-size: calc(10px + 2vmin)
+}
+
+.input-box {
+  min-height: 2rem;
+  border: #282c34 solid 1.5px;
+  border-radius: 2px;
+  font-size: 1.5rem;
+}
+.calculator {
+  display: flex;
+}
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+.row > div {
+  display: flex;
+  padding: 1rem;
+  background-color: #d9dde5;
+  border: #282c34 solid .5px;
+  min-width: 1.5rem;
+  min-height: 1.5rem;
+}
+.zero, .allclear, .equals {
+  flex-grow: 2;
+}
+
+/* .buttons > div {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttons > div > div {
+  display: flex;
+  padding: 1rem;
+  background-color: #d9dde5;
+  border: #282c34 solid .5px;
+  flex-direction: column;
+} */
 
 @keyframes App-logo-spin {
   from {

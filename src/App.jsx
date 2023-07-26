@@ -1,23 +1,50 @@
-import logo from './logo.svg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        Random Utilities
       </header>
+      <div className='title'>
+        Calculator
+      </div>
+      <div>
+        <div className='input-box'></div>
+        <div className='calculator'>
+          <div className='buttons'>
+            <div className='row'>
+              <div>7</div>
+              <div>8</div>
+              <div>9</div>
+              <div>+</div>
+            </div>
+            <div className='row'>
+              <div>4</div>
+              <div>5</div>
+              <div>6</div>
+              <div>-</div>
+            </div>
+            <div className='row'>
+              <div>1</div>
+              <div>2</div>
+              <div>3</div>
+              <div>x</div>
+            </div>
+            <div className='row'>
+              <div className='zero'>0</div>
+              <div>.</div>
+              <div>÷</div>
+            </div>
+            <div className='row'>
+              <div className='allclear'>AC</div>
+              <div className='equals'>=</div>
+            </div>
+            <div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   );
 }
